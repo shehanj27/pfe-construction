@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | PFE Chemicals</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 32px;
+      padding: 4rem;
+      overflow: hidden;
+    }
+
+    .info-item {
+      margin-bottom: 2.5rem;
+    }
+
+    .info-item h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .info-item p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1rem;
+      color: #fff;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="PFE Logo" onerror="this.style.display='none'">
+        PFE CHEMICALS<span>.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active btn btn-outline" style="padding: 0.5rem 1.5rem;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 160px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h1 class="section-title">Let's Discuss Your Project</h1>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <h4>Technical Headquarters</h4>
+            <p>Industrial Zone B,<br>Administrative District Office</p>
+          </div>
+          <div class="info-item">
+            <h4>Digital Support</h4>
+            <p>info@pfechemicals.com<br>support@pfechemicals.com</p>
+          </div>
+          <div class="info-item">
+            <h4>Project Hotline</h4>
+            <p>Direct Engineering Consultations<br>Available During Business Hours</p>
+          </div>
+          <div style="margin-top: 4rem;">
+            <h4 style="color: var(--text-dim); text-transform: none; letter-spacing: normal; margin-bottom: 1rem;">
+              Follow Us</h4>
+            <div style="display: flex; gap: 1rem;">
+              <a href="#" style="color: #fff; text-decoration: none;">LinkedIn</a>
+              <a href="#" style="color: #fff; text-decoration: none;">Facebook</a>
+              <a href="#" style="color: #fff; text-decoration: none;">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Waterproofing Inquiry">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="logo">PFE CHEMICALS<span>.</span></a>
+          <p>Engineering perfection in every layer. We are your trusted partner for high-performance waterproofing and
+            structural solutions.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li style="color: var(--text-dim);">Colombo, Sri Lanka</li>
+            <li><a href="mailto:info@pfe.com">info@pfe.com</a></li>
+            <li style="color: var(--text-dim);">+94 123 456 789</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PFE Chemicals (PFE). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
